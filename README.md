@@ -9,16 +9,15 @@ completion in editors like PyCharm or Visual Studio Code.
 
 Example usage:
 
-    # _Application is the main "Excel.Application" class
-    from exceltypes import _Application
+    # Application is the main "Excel.Application" class
+    from exceltypes import Application
 
     # If using win32com directly
     import win32com.client
-    xl: _Application = win32com.client.Dispatch("Excel.Application")
+    xl: Application = win32com.client.Dispatch("Excel.Application")
 
     # Or if using pyxll
     import pyxll
-    xl: _Application = pyxll.xl_app()
+    xl: Application = pyxll.xl_app()
     
 For details of PyXLL please see https://www.pyxll.com.
-

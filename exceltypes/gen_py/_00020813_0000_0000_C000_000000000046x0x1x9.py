@@ -27743,26 +27743,25 @@ class _Worksheet(typing.Protocol):
 		...
 
 # This CoClass is known by the name 'Excel.Application.16'
-class Application(typing.Protocol): # A CoClass
+class Application(_Application): # A CoClass
 	...
 
 # This CoClass is known by the name 'Excel.Chart.8'
-class Chart(typing.Protocol): # A CoClass
+class Chart(_Chart): # A CoClass
 	...
 
-class Global(typing.Protocol): # A CoClass
+class Global(_Global): # A CoClass
 	...
 
-class OLEObject(typing.Protocol): # A CoClass
+class OLEObject(_OLEObject): # A CoClass
 	...
 
-class QueryTable(typing.Protocol): # A CoClass
+class QueryTable(_QueryTable): # A CoClass
 	...
 
-class Workbook(typing.Protocol): # A CoClass
+class Workbook(_Workbook): # A CoClass
 	...
 
 # This CoClass is known by the name 'Excel.Sheet.8'
-class Worksheet(typing.Protocol): # A CoClass
+class Worksheet(_Worksheet): # A CoClass
 	...
-

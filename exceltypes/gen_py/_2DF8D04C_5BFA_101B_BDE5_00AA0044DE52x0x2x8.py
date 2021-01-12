@@ -10838,30 +10838,30 @@ class _SensitivityLabelEvents:
 	...
 
 
-class CommandBarButton(typing.Protocol): # A CoClass
+class CommandBarButton(_CommandBarButton): # A CoClass
 	...
 
-class CommandBarComboBox(typing.Protocol): # A CoClass
+class CommandBarComboBox(_CommandBarComboBox): # A CoClass
 	...
 
-class CommandBars(typing.Protocol): # A CoClass
+class CommandBars(_CommandBars): # A CoClass
 	...
 
-class CustomTaskPane(typing.Protocol): # A CoClass
+class CustomTaskPane(_CustomTaskPane): # A CoClass
 	...
 
-class CustomXMLPart(typing.Protocol): # A CoClass
+class CustomXMLPart(_CustomXMLPart): # A CoClass
 	...
 
-class CustomXMLParts(typing.Protocol): # A CoClass
+class CustomXMLParts(_CustomXMLParts): # A CoClass
 	...
 
-class CustomXMLSchemaCollection(typing.Protocol): # A CoClass
+class CustomXMLSchemaCollection(_CustomXMLSchemaCollection): # A CoClass
 	...
 
-class MsoEnvelope(typing.Protocol): # A CoClass
+class MsoEnvelope(IMsoEnvelopeVB): # A CoClass
 	...
 
-class SensitivityLabel(typing.Protocol): # A CoClass
+class SensitivityLabel(ISensitivityLabel): # A CoClass
 	...
 
